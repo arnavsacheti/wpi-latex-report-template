@@ -31,9 +31,9 @@
 \makeatother%
 
 \newcommand{\setprintabletext}[1]{
-	
+
 	\ignorespaces\lowercase{\def\tmp{#1}}\unskip
-	
+
 	\ifx\tmp\trueValue
 		\global\def\printabletext{true}
 	\else
@@ -42,9 +42,9 @@
 }
 
 \newcommand{\setprintableimages}[1]{
-	
+
 	\ignorespaces\lowercase{\def\tmp{#1}}\unskip
-	
+
 	\ifx\tmp\trueValue
 		\global\def\printableimages{true}
 	\else
@@ -53,13 +53,13 @@
 }
 
 \newcommand{\checkforceprintable}{
-	
+
 	\ifdefined\forceprint
 		\setprintabletext{true}
-		\setprintableimages{true} 
+		\setprintableimages{true}
 	\else
 		\setprintabletext{false}
-		\setprintableimages{false} 
+		\setprintableimages{false}
 	\fi
 }
 
@@ -67,13 +67,13 @@
 \twosidetrue
 
 \newcommand{\twosidelayout}[1][]{
-	
+
 	\ignorespaces\lowercase{\def\tmp{#1}}\unskip
 
 	\ifx\tmp\empty
 		\twosidetrue
 	\else
-	
+
 		\ifx\tmp\falseValue
 			\twosidefalse
 		\else
@@ -84,12 +84,12 @@
 
 \newcommand{\onesidelayout}{\twosidelayout[false]}
 
-\newif\ifprintunizar
+\newif\ifprintuniversity
 
 % set true or false toset margins for PRENSAR UNIZAR
-% \printunizartrue % margins READY to print by PRENSAS UNIZAR
-% \printunizarfalse % margins NOT READY to print by PRENSAS UNIZAR
-\printunizarfalse
+% \printuniversitytrue % margins READY to print by PRENSAS UNIZAR
+% \printuniversityfalse % margins NOT READY to print by PRENSAS UNIZAR
+\printuniversityfalse
 
 % set document title
 \global\def\THETITLE{Report workbook}

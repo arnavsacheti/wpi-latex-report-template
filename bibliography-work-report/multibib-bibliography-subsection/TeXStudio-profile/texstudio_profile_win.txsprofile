@@ -68,7 +68,7 @@ Common%20Encodings=UTF-8, ISO-8859-1, windows-1252, Apple Roman
 Files\Max%20Recent%20Files=5
 Files\Max%20Recent%20Projects=3
 Files\Max%20Recent%20Sessions=5
-Files\Recent%20Files=D:/doctorado-eebb-viena-1/report.tex, D:/phd-report-progress/report.tex, D:/latex-template-report-unizar/book-unizar.cls, D:/latex-template-report-unizar/report.tex, C:/texlive/2021/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Files\Recent%20Files=D:/doctorado-eebb-viena-1/report.tex, D:/phd-report-progress/report.tex, D:/latex-template-report-university/book-university.cls, D:/latex-template-report-university/report.tex, C:/texlive/2021/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Files\Recent%20Project%20Files=@Invalid()
 Files\Recent%20Session%20Files=@Invalid()
 Files\Remember%20File%20Filter=true
@@ -388,7 +388,7 @@ Symbols\UsageCount=@Variant(\0\0\0\b\0\0\0\x4\0\0\0\x1e\0r\0\x65\0l\0\x61\0t\0i\
 Symbols\FavoriteIDs=@Invalid()
 Symbols\hiddenlists=
 StructureView\SingleDocMode=false
-Tools\Commands\bibunits=D:\\latex-template-report-unizar\\bibliography-work-report\\bibunit-latex-template-report-unizar\\latex_bibunits.bat %.tex | txs:///view
+Tools\Commands\bibunits=D:\\latex-template-report-university\\bibliography-work-report\\bibunit-latex-template-report-university\\latex_bibunits.bat %.tex | txs:///view
 Tools\Program%20Whitelist=latex, pdflatex
 Tools\Individual%20Program%20Whitelist="{268d4969-4e36-4aa0-8e6b-2d3f6dcddb2d}=make all", "{dfe7e134-81ac-441b-9a3e-2fb65a012ed8}=make all", "{b12698c5-c1cb-4798-a320-d51565c30342}=make all", "{ec9498f5-7386-43ef-b17a-b23f76d36f69}=make all", "{b4d554df-af16-4c51-a3fc-b6cad098fa1c}=make all", "{ee5fdb6e-01fb-4b76-9688-d70689fa9cd6}=make all", "{322d4cb7-a0e5-4b31-9bf5-2626ca5630c1}=make all", "{e9737bb9-e18b-499c-a985-7f19d2fb14e5}=make all"
 CleanDialog\Extensions="log,aux,dvi,lof,lot,bit,idx,glo,bbl,bcf,ilg,toc,ind,out,blg,fdb_latexmk,fls,run.xml"

@@ -14,7 +14,7 @@ Editor LaTeX OpenSource recomendado: [TeXstudio](https://www.texstudio.org/)
 
 ## Configurar TeXStudio
 
-En Options -> Texstudio configuration -> Orders, poner la siguiente linea en la seccion de *PDFLaTex*:
+En Options -> Texstudio configuration -> Orders, poner la siguiente linea en la seccion de _PDFLaTex_:
 
 ```
 pdflatex -synctex=1 --shell-escape -interaction=nonstopmode -enable-write18 %.tex
@@ -23,7 +23,7 @@ pdflatex -synctex=1 --shell-escape -interaction=nonstopmode -enable-write18 %.te
 Configura BiBTex con el siguiente comando:
 
 ```
-bibtex ?a*.aux 
+bibtex ?a*.aux
 ```
 
 ## Paquete bibunits
@@ -52,7 +52,7 @@ sudo apt-get install cm-super
 
 Finalmente, puedes importar la configuración para compilar el documento en TeXStudio usando el archivo correspondiente para sistemas UNIX o Windows que se encuentra en la carpera **TeXStudio-profile**, menú **Options -> Load profile ...**
 
-## Compresión de PDF con Docker 
+## Compresión de PDF con Docker
 
 El comando **make all-cover** del archivo Makefile usa Docker para comprimir el archivo pdf, si desea usar este comando debes instalar Docker](https://www.docker.com/products/docker-desktop).
 
@@ -77,7 +77,7 @@ Si vas a usar este software, por favor incluye una entrada de BibTeX en tu docum
 ```
 @Misc{SergioTemplateLatex2021,
 	author       = {Martínez-Losa Del Rincón, Sergio},
-	howpublished = {\url{https://github.com/sergiomtzlosa/latex-template-report-unizar}},
+	howpublished = {\url{https://github.com/sergiomtzlosa/latex-template-report-university}},
 	title        = {{U}nofficial {L}a{T}e{X} template for reports/books/thesis with corporate logos of {U}niversidad de {Z}aragoza with a beautiful look and feel},
 	year         = {2021},
 	commit       = {ef0242edd8260c39179310fe1b3bc55c9f69d230},

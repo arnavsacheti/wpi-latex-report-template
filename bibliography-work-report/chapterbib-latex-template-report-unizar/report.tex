@@ -10,7 +10,7 @@
 %
 %\documentclass[11pt,letterpaper,openright,spanish,english]{extbook}
 \documentclass[11pt,a4paper,spanish,english]{book}
-%\documentclass[11pt,a4paper,spanish,english]{book-unizar}
+%\documentclass[11pt,a4paper,spanish,english]{book-university}
 %\documentclass[11pt,a4paper,openright,spanish,english]{book}
 
 \input{utils/super_macro}
@@ -59,25 +59,25 @@
 
 % supress page numbering	
 %\pagenumbering{gobble}
-	
+
 % insert cover
 % other fancy cover: https://tex.stackexchange.com/questions/475597/how-to-create-a-cover-page-like-this
 % https://latexdraw.com/how-to-create-a-beautiful-cover-page-in-latex-using-tikz/
 \begin{titlepage}
-	
+
 	\pagestyle{empty}
 	\protect\thispagestyle{empty}
-	
+
 	\ifx\printableimages\trueValue
 		\input{utils/cover_bw}
 	\else
-%		\input{utils/cover_colour}
+		%		\input{utils/cover_colour}
 		\input{utils/cover_colour_alternative_rainbow}
-%		\input{utils/cover_colour_blue}
-%               \input{utils/cover_colour_tschichold}
-%               \input{utils/cover_colour_tschichold_blue}
+		%		\input{utils/cover_colour_blue}
+		%               \input{utils/cover_colour_tschichold}
+		%               \input{utils/cover_colour_tschichold_blue}
 	\fi
-	
+
 \end{titlepage}
 
 \frontmatter % apply TOC styles frontmatter
@@ -153,24 +153,24 @@
 \begin{startpagenumbering}[1]
 
 	\bibliographystyle{unsrt}
-	
+
 	\begin{cbunit}
-		
+
 		\input{chapters/00_introduction}
 		\bibliography{./utils/report-bib}
-%		\addcontentsline{toc}{section}{\bibname} % set section for bibliography for TOC without number
-%		\renewcommand{\bibsection}{\section{\bibname}} % set number to bibliography for TOC	
+		%		\addcontentsline{toc}{section}{\bibname} % set section for bibliography for TOC without number
+		%		\renewcommand{\bibsection}{\section{\bibname}} % set number to bibliography for TOC	
 
 		\input{chapters/01_first_chapter}
-% 1.- Commnent \bibliography{./utils/report-bib} line below
-% 2.- Compile as normal
-% 3.- Uncommnent \bibliography{./utils/report-bib} line below
-% 4.- Compile as normal
+		% 1.- Commnent \bibliography{./utils/report-bib} line below
+		% 2.- Compile as normal
+		% 3.- Uncommnent \bibliography{./utils/report-bib} line below
+		% 4.- Compile as normal
 		\bibliography{./utils/report-bib}
-%		\addcontentsline{toc}{section}{\bibname} % set section for bibliography for TOC without number
-%		\renewcommand{\bibsection}{\section{\bibname}} % set number to bibliography for TOC	
+		%		\addcontentsline{toc}{section}{\bibname} % set section for bibliography for TOC without number
+		%		\renewcommand{\bibsection}{\section{\bibname}} % set number to bibliography for TOC	
 	\end{cbunit}
-	
+
 \end{startpagenumbering}
 
 \backmatter % apply TOC styles backmatter
@@ -196,13 +196,12 @@
 
 % List of publications
 \iffilepublications
-
 	\renewcommand{\listofpublicationsname}{List of Publications}
 	\SetHeaderTitle{\MakeUppercase{\listofpublicationsname}}
 	\phantomsection\addcontentsline{toc}{chapter}{\listofpublicationsname}
 	\protect\pagestyle{phdfancyspecialempty}
 	\nocitepublications{*}
-%	\protect\bibliographystylepublications{./packages/ieeetr-redux}
+	%	\protect\bibliographystylepublications{./packages/ieeetr-redux}
 	\bibliographystylepublications{unsrt}
 	\bibliographypublications{./utils/publications}
 	\clearpage

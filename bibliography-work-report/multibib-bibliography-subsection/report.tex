@@ -10,7 +10,7 @@
 %
 %\documentclass[11pt,letterpaper,openright,spanish,english]{extbook}
 \documentclass[11pt,a4paper,spanish,english]{book}
-%\documentclass[11pt,a4paper,spanish,english]{book-unizar}
+%\documentclass[11pt,a4paper,spanish,english]{book-university}
 %\documentclass[11pt,a4paper,openright,spanish,english]{book}
 
 \input{utils/super_macro}
@@ -57,26 +57,26 @@
 
 % supress page numbering	
 %\pagenumbering{gobble}
-	
+
 % insert cover
 % other fancy cover: https://tex.stackexchange.com/questions/475597/how-to-create-a-cover-page-like-this
 % https://latexdraw.com/how-to-create-a-beautiful-cover-page-in-latex-using-tikz/
 \begin{titlepage}
-	
+
 	\pagestyle{empty}
 	\protect\thispagestyle{empty}
-	
+
 	\ifx\printableimages\trueValue
 		\input{utils/cover_bw}
 	\else
-%		\input{utils/cover_colour}
-                \input{utils/cover_colour_alternative_rainbow}
-%		\input{utils/cover_colour_blue}
-%		\input{utils/cover_colour_blue_hexa}
-%		\input{utils/cover_colour_tschichold}
-%		\input{utils/cover_colour_tschichold_blue}
+		%		\input{utils/cover_colour}
+		\input{utils/cover_colour_alternative_rainbow}
+		%		\input{utils/cover_colour_blue}
+		%		\input{utils/cover_colour_blue_hexa}
+		%		\input{utils/cover_colour_tschichold}
+		%		\input{utils/cover_colour_tschichold_blue}
 	\fi
-	
+
 \end{titlepage}
 
 \frontmatter % apply TOC styles frontmatter
@@ -153,7 +153,7 @@
 
 	\input{chapters/00_introduction}
 	\input{chapters/01_first_chapter}
-	
+
 \end{startpagenumbering}
 
 \backmatter % apply TOC styles backmatter
@@ -197,11 +197,11 @@
 	\makeatletter
 	\def\@biblabel#1{\textsuperscript{[#1]\hskip -0.1cm}}
 	\makeatother
-	
+
 	\renewcommand{\listofpublicationsname}{List of Publications}
-	
+
 	\renewcommand{\bibsection}{\chapter*{\flushleft\listofpublicationsname\vspace{-0.6cm}\customquad\rule{\linewidth}{1pt}\vspace{-0.5cm}}\protect{\thispagestyle{phdfancyempty}}}{}{}
-	
+
 	\SetHeaderTitle{\MakeUppercase{\listofpublicationsname}}
 	\phantomsection\addcontentsline{toc}{chapter}{\listofpublicationsname}
 	\protect\thispagestyle{phdfancyempty}

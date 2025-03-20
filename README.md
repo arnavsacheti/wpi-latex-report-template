@@ -12,7 +12,7 @@ Recommended OpenSource LaTex editor: [TeXstudio](https://www.texstudio.org/)
 
 ## Configure TeXStudio
 
-Over Options -> Texstudio configuration -> Orders, set the following line in section *PDFLaTex*:
+Over Options -> Texstudio configuration -> Orders, set the following line in section _PDFLaTex_:
 
 ```
 pdflatex -synctex=1 --shell-escape -interaction=nonstopmode -enable-write18 %.tex
@@ -70,7 +70,7 @@ Ready for latest TexLive releases.
 
 ## Overleaf template
 
-This template is ready to use in [overleaf](https://overleaf.com/latex/templates/latex-phd-template-unizar/cfgtthjfynrx).
+This template is ready to use in [overleaf](https://overleaf.com/latex/templates/latex-phd-template-university/cfgtthjfynrx).
 
 # BibTeX citation
 
@@ -83,7 +83,7 @@ If you use this software, please add a BibTex entry in your document to refer th
 	year         = 2021,
 	journal      = {GitHub repository},
 	publisher    = {GitHub},
-	howpublished = {\url{https://github.com/sergiomtzlosa/latex-template-report-unizar}},
+	howpublished = {\url{https://github.com/sergiomtzlosa/latex-template-report-university}},
 	commit       = {ef0242edd8260c39179310fe1b3bc55c9f69d230}
 }
 ```

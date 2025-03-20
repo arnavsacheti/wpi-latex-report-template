@@ -5,19 +5,19 @@
 \usepackage{booktabs}
 %\usepackage[a4paper, margin=2.2cm]{geometry}
 
-\ifprintunizar
-	\usepackage[a4paper, 
-				tmargin=45mm, 
-				lmargin=40mm, 
-				textwidth=130mm, 
-				textheight=210mm, 
-				headsep=5mm]{geometry}
+\ifprintuniversity
+	\usepackage[a4paper,
+		tmargin=45mm,
+		lmargin=40mm,
+		textwidth=130mm,
+		textheight=210mm,
+		headsep=5mm]{geometry}
 \else
 	\usepackage[a4paper,
-				tmargin=2.2cm, 
-				lmargin=2.2cm,
-				rmargin=2.2cm, 
-				bmargin=1.0in]{geometry}
+		tmargin=2.2cm,
+		lmargin=2.2cm,
+		rmargin=2.2cm,
+		bmargin=1.0in]{geometry}
 \fi
 
 %\usepackage[letterpaper,margin=2.2cm]{geometry}
@@ -61,7 +61,7 @@
 \else
 	\usepackage[dvipsnames, table]{xcolor}
 	\usepackage{xcolor}
-%	\usepackage{color, colortbl}
+	%	\usepackage{color, colortbl}
 \fi
 
 \ifdefined\mainmatter
@@ -134,18 +134,18 @@
 	\typeout{@@@@@@@@@@@@@}
 	\typeout{@@@@@@@@@@@@@ SELECTED TWO-SIDE}
 	\typeout{@@@@@@@@@@@@@}
-	
+
 	\makeatletter
-		\@twosidetrue
+	\@twosidetrue
 	\makeatother
 \else
 
 	\typeout{@@@@@@@@@@@@@}
 	\typeout{@@@@@@@@@@@@@ SELECTED ONE-SIDE}
 	\typeout{@@@@@@@@@@@@@}
-	
+
 	\makeatletter
-		\@twosidefalse
+	\@twosidefalse
 	\makeatother
 \fi
 
@@ -157,9 +157,9 @@
 \iffilepublications
 
 	\makeatletter
-		\@ifpackageloaded{multibib}{\relax}{
-			\usepackage[resetlabels]{multibib} % multiple bibliography
-		}
+	\@ifpackageloaded{multibib}{\relax}{
+		\usepackage[resetlabels]{multibib} % multiple bibliography
+	}
 	\makeatother
 
 \fi
@@ -174,7 +174,7 @@
 \fi
 
 \newcommand{\ConfigLinksBlack}{
-	
+
 	\hypersetup{
 		colorlinks = true,
 		linkcolor=black,
@@ -191,11 +191,11 @@
 		menubordercolor=black,
 		pdfpagemode=UseOutlines,
 		hypertexnames = true,
-		pdfencoding = auto, 
-		psdextra, 
+		pdfencoding = auto,
+		psdextra,
 		bookmarksdepth = 4
 		bookmarks=true,
-		bookmarksopen=true,    
+		bookmarksopen=true,
 		bookmarksopenlevel=0,
 		bookmarksnumbered=true,
 		plainpages=false
@@ -205,9 +205,9 @@
 \newcommand{\ConfigLinksColours}{
 
 	% style color setup: https://tex.stackexchange.com/questions/525261/better-default-colors-for-hyperref-links
-	
+
 	\definecolor{blue-hyperref}{rgb}{0,0.2,0.6}
-	
+
 	\hypersetup{
 		colorlinks = true,
 		linkcolor=blue-hyperref,
@@ -224,31 +224,31 @@
 		menubordercolor=blue-hyperref,
 		pdfpagemode=UseOutlines,
 		hypertexnames = true,
-		pdfencoding = auto, 
-		psdextra, 
+		pdfencoding = auto,
+		psdextra,
 		bookmarksdepth = 4
 		bookmarks=true,
-		bookmarksopen=true,    
+		bookmarksopen=true,
 		bookmarksopenlevel=0,
 		bookmarksnumbered=true,
 		plainpages=false
 	}
-	
-%	\hypersetup{
-%		colorlinks = true
-%		,linkcolor=NavyBlue %BrickRed
-%		,citecolor=Green
-%		,filecolor=Mulberry
-%		,urlcolor=NavyBlue
-%		,menucolor=BrickRed
-%		,runcolor=Mulberry
-%		,linkbordercolor=BrickRed
-%		,citebordercolor=Green
-%		,filebordercolor=Mulberry
-%		,urlbordercolor=NavyBlue
-%		,menubordercolor=BrickRed
-%		,runbordercolor=Mulberry
-%	}
+
+	%	\hypersetup{
+	%		colorlinks = true
+	%		,linkcolor=NavyBlue %BrickRed
+	%		,citecolor=Green
+	%		,filecolor=Mulberry
+	%		,urlcolor=NavyBlue
+	%		,menucolor=BrickRed
+	%		,runcolor=Mulberry
+	%		,linkbordercolor=BrickRed
+	%		,citebordercolor=Green
+	%		,filebordercolor=Mulberry
+	%		,urlbordercolor=NavyBlue
+	%		,menubordercolor=BrickRed
+	%		,runbordercolor=Mulberry
+	%	}
 }
 
 \ifx\printabletext\trueValue
@@ -256,15 +256,15 @@
 	\ConfigLinksBlack
 
 \else
-	
+
 	\ifdefined\compileblack
-	
+
 		\ConfigLinksBlack
-	
+
 	\else
-	
+
 		\ConfigLinksColours
-	
+
 	\fi
 \fi
 
@@ -282,7 +282,7 @@
 	\typeout{@@@@@@@@@@@@@}
 	\typeout{@@@@@@@@@@@@@ PRINTING BLACK AND WHITE IMAGES}{}
 	\typeout{@@@@@@@@@@@@@}
-\else 
+\else
 	\typeout{@@@@@@@@@@@@@}
 	\typeout{@@@@@@@@@@@@@ PRINTING RGB IMAGES}{}
 	\typeout{@@@@@@@@@@@@@}
@@ -352,22 +352,22 @@
 % https://tex.stackexchange.com/questions/48067/pdfinfo-doesnt-appear-to-be-working#48070
 \ifpdf
 	\makeatletter
-		\AtBeginDocument{
-			\hypersetup{
-				pdftitle={\@title~\expandonce\THETITLE},
-				pdfauthor={\@author},
-				pdfkeywords={\keywords},
-				pdfproducer={\expandonce\THEAUTHOR},
-				pdfcreator={\expandonce\THEAUTHOR},
-				pdfsubject={\expandonce\THETITLE},
-				pdfinfo={
+	\AtBeginDocument{
+		\hypersetup{
+			pdftitle={\@title~\expandonce\THETITLE},
+			pdfauthor={\@author},
+			pdfkeywords={\keywords},
+			pdfproducer={\expandonce\THEAUTHOR},
+			pdfcreator={\expandonce\THEAUTHOR},
+			pdfsubject={\expandonce\THETITLE},
+			pdfinfo={
 					Title={\THETITLE},
 					Author={\THEAUTHOR},
 					Creator={\THEAUTHOR},
 					Producer={\THEAUTHOR}
 				}
-			}
 		}
+	}
 	\makeatother
 \fi
 
@@ -420,11 +420,11 @@
 		\interlinepenalty\@M
 		\Huge \bfseries #1\par\nobreak
 		\vskip 10\p@
-}}
+	}}
 \makeatother
 
 \ifx\printableimages\trueValue
-%	\immediate\write18{chmod +x utils/convert-grayscale.sh && ./utils/convert-grayscale.sh &>/dev/null}
+	%	\immediate\write18{chmod +x utils/convert-grayscale.sh && ./utils/convert-grayscale.sh &>/dev/null}
 	\graphicspath{{./images-grayscale/}}
 \else
 	\graphicspath{{./images/}}
@@ -468,13 +468,13 @@
 \else
 
 	\ifindentall
-	
+
 		\setlength{\parindent}{1em}
-		
+
 	\else
-	
+
 		%% START NOT INDENT FIRST PARAGRAPH OTHER PARAGRAPHS INDENT
-		
+
 		\makeatletter
 		\def\@afterheading{%
 			\@nobreaktrue
@@ -489,23 +489,23 @@
 				\fi}}
 		\makeatother
 		\setlength{\parindent}{0em}
-		
+
 		%% END NOT INDENT FIRST PARAGRAPH OTHER PARAGRAPHS INDENT
-	
+
 		%% PATCH INDENT AFTER ENVIRONMENT LIST BASED
 		% https://tex.stackexchange.com/questions/112404/reliable-code-for-automatic-noindent-after-specific-environments
 		% https://tex.stackexchange.com/questions/23062/an-unexpected-value-of-clubpenalty
-		
+
 		\makeatletter
 		\let\nearly@afterheading\@afterheading
 		\patchcmd\nearly@afterheading
-			{\@M} % original temporary setting for \clubpenalty replaced by ...
-			{\@clubpenalty\protect\indentspace} % ... or whichever value you deem right
-			{}{}
-	
+		{\@M} % original temporary setting for \clubpenalty replaced by ...
+		{\@clubpenalty\protect\indentspace} % ... or whichever value you deem right
+		{}{}
+
 		\newcommand*\IndentAfterEnv[1]{%
 			\AfterEndEnvironment{#1}{\par\@afterindentfalse\nearly@afterheading}}
-		
+
 		\newcommand*\SpaceBeforeEnv[1]{%
 			\BeforeBeginEnvironment{#1}{\par\protect\vspace*{0.5em}}}
 		\makeatother
@@ -513,11 +513,11 @@
 		% indent after environment
 		\IndentAfterEnv{itemize}
 		\IndentAfterEnv{enumerate}
-		
+
 		% mandatory for a \parskip of 0.7em
 		\SpaceBeforeEnv{itemize}
 		\SpaceBeforeEnv{enumerate}
-		
+
 		%% END PATCH INDENT AFTER ENVIRONMENT LIST BASED
 	\fi
 
@@ -533,31 +533,31 @@
 
 \ifdefined\mainmatter
 
-	% https://tex.stackexchange.com/questions/439926/different-style-for-backmatter-chapters-in-toc
-	% \mainmatter defined
-	\typeout{@@@@@@@@@@@@@}
-	\typeout{@@@@@@@@@@@@@ mainmatter defined}
-	\typeout{@@@@@@@@@@@@@}
-	
-		% https://tex.stackexchange.com/a/511461
-	% https://tex.stackexchange.com/questions/544569/koma-toc-constant-distance-between-section-title-and-pagenumber
-	
-	\DeclareTOCStyleEntry[%
-		entryformat=\chapterentryformat,%
-		pagenumberformat=\chapterentryformat,%
-		pagenumberbox=\pagenumberboxsimple,%
-%		linefill=\dotfillcustomentryformat,%
-%		indent=0pt
-	]{tocline}{chapter}%
-	
-	\DeclareTOCStyleEntries[%
-		entryformat=\sectionentryformat,%
-		pagenumberformat=\sectionentryformat,%
-		pagenumberbox=\pagenumberboxsimple,%
-%		linefill=\dotfillcustomentryformat,%
-%		indent=0pt
-	]{tocline}{section}%
-	
+% https://tex.stackexchange.com/questions/439926/different-style-for-backmatter-chapters-in-toc
+% \mainmatter defined
+\typeout{@@@@@@@@@@@@@}
+\typeout{@@@@@@@@@@@@@ mainmatter defined}
+\typeout{@@@@@@@@@@@@@}
+
+% https://tex.stackexchange.com/a/511461
+% https://tex.stackexchange.com/questions/544569/koma-toc-constant-distance-between-section-title-and-pagenumber
+
+\DeclareTOCStyleEntry[%
+	entryformat=\chapterentryformat,%
+	pagenumberformat=\chapterentryformat,%
+	pagenumberbox=\pagenumberboxsimple,%
+	%		linefill=\dotfillcustomentryformat,%
+	%		indent=0pt
+]{tocline}{chapter}%
+
+\DeclareTOCStyleEntries[%
+	entryformat=\sectionentryformat,%
+	pagenumberformat=\sectionentryformat,%
+	pagenumberbox=\pagenumberboxsimple,%
+	%		linefill=\dotfillcustomentryformat,%
+	%		indent=0pt
+]{tocline}{section}%
+
 %	\DeclareTOCStyleEntry[%
 %		entryformat=\subsectionentryformat,%
 %		pagenumberformat=\subsectionentryformat,%
@@ -565,24 +565,24 @@
 %		%linefill=\dotfill,%
 %		%indent=0pt
 %	]{tocline}{subsection}%
-	
-	\DeclareTOCStyleEntry[%
-		pagenumberbox={\mbox}%
-	]{tocline}{figure}%
-	
-	\newif\ifmainmatterintoc
-	
+
+\DeclareTOCStyleEntry[%
+	pagenumberbox={\mbox}%
+]{tocline}{figure}%
+
+\newif\ifmainmatterintoc
+
 	%	\newcommand*\pagenumberbox[1]{\mbox{\hspace{1em}#1}}
 	\newcommand*\pagenumberboxsimple[1]{\mbox{#1}\relax}%
-	
+
 	%	\newcommand*\dotfillcustomentryformat[1]{{\ifmainmatterintoc\dotfill\else\relax\fi#1}}%
-	
+
 	\newcommand*\subsectionentryformat[1]{{\ifmainmatterintoc\relax\else\normalfont\itshape\fi#1}}%
-	
+
 	\newcommand*\sectionentryformat[1]{{\ifmainmatterintoc\normalfont\else\normalfont\itshape\fi#1}}%
-	
+
 	\newcommand*\chapterentryformat[1]{{\ifmainmatterintoc\normalfont\bfseries\else\normalfont\itshape\fi#1}}%
-	
+
 	\xapptocmd\mainmatter{\addtocontents{toc}{\protect\mainmatterintoctrue}}{}{}%
 	\xapptocmd\backmatter{\addtocontents{toc}{\protect\mainmatterintocfalse}}{}{}%
 
@@ -593,61 +593,61 @@
 	\typeout{@@@@@@@@@@@@@ mainmatter NOT defined}
 	\makeatletter
 	\typeout{@@@@@@@@@@@@@}
-	
+
 	\newcommand*{\enableboldchapterintoc}{%
-		
+
 		\addtocontents{toc}{\protect\unexpanded{\protect\unexpanded{\string\renewcommand{\protect\cftchapdotsep}{\protect\cftnodots}}}} % remove dots
 		\addtocontents{toc}{\string\renewcommand{\protect\cftchapfont}{\protect\normalfont\protect\bfseries}}
 		\addtocontents{toc}{\string\renewcommand{\protect\cftchappagefont}{\protect\normalfont\protect\bfseries}}
 		\addtocontents{toc}{\string\renewcommand{\protect\cftchapleader}{\protect\bfseries\hfill\relax}}
 		%	\addtocontents{toc}{\string\renewcommand{\protect\cftchapleader}{\protect\bfseries\protect\cftdotfill{\protect\cftsecdotsep}}} % dot leaders in bold
 	}
-	
+
 	\newcommand*{\enableitalicchapterintoc}{%
-		
+
 		\addtocontents{toc}{\protect\unexpanded{\protect\unexpanded{\string\renewcommand{\protect\cftchapdotsep}{\protect\cftnodots}}}} % remove dots
 		\addtocontents{toc}{\string\renewcommand{\protect\cftchapfont}{\protect\normalfont\protect\itshape}}
 		\addtocontents{toc}{\string\renewcommand{\protect\cftchappagefont}{\protect\normalfont\protect\itshape}}
 		\addtocontents{toc}{\string\renewcommand{\protect\cftchapleader}{\protect\itshape\hfill\relax}}
 	}
-	
+
 	\newcommand*{\disablestylechapterintoc}{%
-		
+
 		\addtocontents{toc}{\string\renewcommand{\protect\cftchappagefont}{\protect\normalfont}}
 		\addtocontents{toc}{\string\renewcommand{\protect\cftchapfont}{\protect\normalfont}}
 		\addtocontents{toc}{\string\renewcommand{\protect\cftchapleader}{\protect\normalfont\protect\cftdotfill{\protect\cftsecdotsep}}}% 
 	}
-	
+
 	\newcommand{\frontmatter}{%
-		
+
 		\disablestylechapterintoc
 		\enableitalicchapterintoc
-		
+
 		\cleardoublepage
 		\pagenumbering{Roman}
 	}
-	
+
 	\newcommand{\mainmatter}{%
-		
+
 		\disablestylechapterintoc
 		\enableboldchapterintoc
-		
+
 		\cleardoublepage
 		\pagenumbering{arabic}
 	}
-	
+
 	\newcommand{\backmatter}{%
-		
+
 		\disablestylechapterintoc
 		\enableitalicchapterintoc
-		
+
 		\if@openright
 			\cleardoublepage
 		\else
 			\clearpage
 		\fi
 	}
-	
+
 	\makeatother
 
 \fi
@@ -671,28 +671,28 @@
 	\typeout{@@@@@@@@@@@@@}
 	\typeout{@@@@@@@@@@@@@ TWO-SIDE DOCUMENT}
 	\typeout{@@@@@@@@@@@@@}
-	
+
 	% CLEAN DOUBLE PAGES ON TWOSIDE MODE
 	% https://tex.stackexchange.com/questions/62572/twoside-introduces-incorrect-linespacing-at-end-of-section
 	\raggedbottom
 	% https://stackoverflow.com/questions/491904/how-do-i-remove-blank-pages-coming-between-two-chapters-in-appendix
 	\let\cleardoublepage\clearpage
 	% END CLEAN DOUBLE PAGES ON TWOSIDE MODE
-	
+
 \else%
 
 	\typeout{@@@@@@@@@@@@@}
 	\typeout{@@@@@@@@@@@@@ ONE-SIDE DOCUMENT}
 	\typeout{@@@@@@@@@@@@@}
-	
+
 \fi%  
 
 \makeatother
 
 % brakets for citation superscripts
 % https://tex.stackexchange.com/questions/79591/superscripts-in-bibliography-with-bibtex#79599
-\makeatletter 
-	\renewcommand{\@citess}[1]{\textsuperscript{\,[#1]}} 
+\makeatletter
+\renewcommand{\@citess}[1]{\textsuperscript{\,[#1]}}
 \makeatother
 
 % https://tex.stackexchange.com/questions/29084/biblatex-separator-for-citing-multiple-sources-some-of-them-with-page-some-no
@@ -709,7 +709,7 @@
 	% change colour of glossary links
 	% https://tex.stackexchange.com/questions/38544/glossary-links-color
 	\def\glossarylinknewcolour{orange}
-	
+
 	\ifdefined\compileblack
 		\def\glossarylinknewcolour{black}
 	\else
@@ -717,10 +717,10 @@
 	\fi
 
 	\makeatletter
-	
-		\newcommand{\glsplainhyperlink}[2]{\colorlet{currenttext}{\glossarylinknewcolour}\colorlet{currentlink}{\@linkcolor}\hypersetup{linkcolor=currenttext}\hyperlink{#1}{#2}\hypersetup{linkcolor=currentlink}}
-		\let\@glslink\glsplainhyperlink
-		
+
+	\newcommand{\glsplainhyperlink}[2]{\colorlet{currenttext}{\glossarylinknewcolour}\colorlet{currentlink}{\@linkcolor}\hypersetup{linkcolor=currenttext}\hyperlink{#1}{#2}\hypersetup{linkcolor=currentlink}}
+	\let\@glslink\glsplainhyperlink
+
 	\makeatother
 \fi
 

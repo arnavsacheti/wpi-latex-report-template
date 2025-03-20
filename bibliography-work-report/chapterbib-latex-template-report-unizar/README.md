@@ -12,7 +12,7 @@ Recommended OpenSource LaTex editor: [TeXstudio](https://www.texstudio.org/)
 
 ## Configure TeXStudio
 
-Over Options -> Texstudio configuration -> Orders, set the following line in section *PDFLaTex*:
+Over Options -> Texstudio configuration -> Orders, set the following line in section _PDFLaTex_:
 
 ```
 pdflatex -synctex=1 --shell-escape -interaction=nonstopmode -enable-write18 %.tex
@@ -21,7 +21,7 @@ pdflatex -synctex=1 --shell-escape -interaction=nonstopmode -enable-write18 %.te
 Configure BiBTex with the following command:
 
 ```
-bibtex ?a*.aux 
+bibtex ?a*.aux
 ```
 
 ## Install pygments
@@ -67,7 +67,7 @@ If you use this software, please add a BibTex entry in your document to refer th
 ```
 @Misc{SergioTemplateLatex2021,
 	author       = {Martínez-Losa Del Rincón, Sergio},
-	howpublished = {\url{https://github.com/sergiomtzlosa/latex-template-report-unizar}},
+	howpublished = {\url{https://github.com/sergiomtzlosa/latex-template-report-university}},
 	title        = {{U}nofficial {L}a{T}e{X} template for reports/books/thesis with corporate logos of {U}niversidad de {Z}aragoza with a beautiful look and feel},
 	year         = {2021},
 	commit       = {ef0242edd8260c39179310fe1b3bc55c9f69d230},

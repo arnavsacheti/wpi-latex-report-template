@@ -10,7 +10,7 @@
 %
 %\documentclass[11pt,letterpaper,openright,spanish,english]{extbook}
 \documentclass[11pt,a4paper,spanish,english]{book}
-%\documentclass[11pt,a4paper,spanish,english]{book-unizar}
+%\documentclass[11pt,a4paper,spanish,english]{book-university}
 %\documentclass[11pt,a4paper,openright,spanish,english]{book}
 
 \input{utils/super_macro}
@@ -29,8 +29,8 @@
 \twosidelayout % default twoside layout active
 %\onesidelayout % equivalent to \twosidelayout[false]
 
-%\printunizartrue % margins READY to print by PRENSAS UNIZAR
-\printunizarfalse % margins NOT READY to print by PRENSAS UNIZAR
+%\printuniversitytrue % margins READY to print by PRENSAS university
+\printuniversityfalse % margins NOT READY to print by PRENSAS university
 
 \checkforceprintable
 
@@ -68,26 +68,26 @@
 
 % supress page numbering	
 %\pagenumbering{gobble}
-	
+
 % insert cover
 % other fancy cover: https://tex.stackexchange.com/questions/475597/how-to-create-a-cover-page-like-this
 % https://latexdraw.com/how-to-create-a-beautiful-cover-page-in-latex-using-tikz/
 \begin{titlepage}
-	
+
 	\pagestyle{empty}
 	\protect\thispagestyle{empty}
-	
+
 	\ifx\printableimages\trueValue
 		\input{utils/cover_bw}
 	\else
-%		\input{utils/cover_colour}
-                \input{utils/cover_colour_alternative_rainbow}
-%		\input{utils/cover_colour_blue}
-%		\input{utils/cover_colour_blue_hexa}
-%		\input{utils/cover_colour_tschichold}
-%		\input{utils/cover_colour_tschichold_blue}
+		%		\input{utils/cover_colour}
+		\input{utils/cover_colour_alternative_rainbow}
+		%		\input{utils/cover_colour_blue}
+		%		\input{utils/cover_colour_blue_hexa}
+		%		\input{utils/cover_colour_tschichold}
+		%		\input{utils/cover_colour_tschichold_blue}
 	\fi
-	
+
 \end{titlepage}
 
 \frontmatter % apply TOC styles frontmatter
@@ -162,13 +162,13 @@
 
 \begin{startpagenumbering}[1]
 
-%	\setstretch{1.5}
-%	\linespread{1.5} 
+	%	\setstretch{1.5}
+	%	\linespread{1.5} 
 
 	\input{chapters/00_introduction}
 	\input{chapters/01_first_chapter}
-%	\tocclearpage
-	
+	%	\tocclearpage
+
 \end{startpagenumbering}
 
 \backmatter % apply TOC styles backmatter
@@ -223,7 +223,7 @@
 	\phantomsection\addcontentsline{toc}{chapter}{\listofpublicationsname}
 	\protect\pagestyle{phdfancyspecialempty}
 	\nocitepublications{*}
-%	\protect\bibliographystylepublications{./packages/ieeetr-redux}
+	%	\protect\bibliographystylepublications{./packages/ieeetr-redux}
 	\protect\bibliographystylepublications{unsrt}
 	\bibliographypublications{./utils/publications}
 	\clearpage

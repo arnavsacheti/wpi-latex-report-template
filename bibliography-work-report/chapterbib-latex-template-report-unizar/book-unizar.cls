@@ -13,7 +13,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{book-unizar}[2021/11/07 Custom class for UNIZAR reports/thesis]
+\ProvidesClass{book-university}[2021/11/07 Custom class for UNIZAR reports/thesis]
 
 % https://tex.stackexchange.com/questions/9792/is-there-a-way-to-detect-from-inside-a-package-that-miktex-is-used
 \RequirePackage{packages/ifdistro}
@@ -27,11 +27,11 @@
 	\expandafter\get@version\pdftexbanner\@nil
 	\endgroup
 	\makeatother
-	
+
 	\typeout{@@@@@@@@@@@@@}
 	\typeout{@@@@@@@@@@@@@ This has been run with TeX Live \TeXLiveVersion.}
 	\typeout{@@@@@@@@@@@@@}
-	
+
 	\ifnum \TeXLiveVersion=2019
 		\typeout{@@@@@@@@ RUNING TeX Live 2019}
 		\relax
@@ -54,7 +54,7 @@
 	\typeout{@@@@@@@@@@@@@ This has been run with other TeX distribution different from Tex Live, maybe MikTeX?}
 	\typeout{@@@@@@@@@@@@@}
 	\RequirePackage[2020/02/08]{latexrelease} % Used other tex distribution different from TeX Live
-	
+
 \fi
 
 %\DeclareOption*{\PassOptionsToClass{\CurrentOption}{extbook}}

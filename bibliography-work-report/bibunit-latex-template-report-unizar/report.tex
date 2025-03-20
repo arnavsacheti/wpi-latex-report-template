@@ -10,7 +10,7 @@
 %
 %\documentclass[11pt,letterpaper,openright,spanish,english]{extbook}
 \documentclass[11pt,a4paper,spanish,english]{book}
-%\documentclass[11pt,a4paper,spanish,english]{book-unizar}
+%\documentclass[11pt,a4paper,spanish,english]{book-university}
 %\documentclass[11pt,a4paper,openright,spanish,english]{book}
 
 \input{utils/super_macro}
@@ -55,25 +55,25 @@
 
 % supress page numbering	
 %\pagenumbering{gobble}
-	
+
 % insert cover
 % other fancy cover: https://tex.stackexchange.com/questions/475597/how-to-create-a-cover-page-like-this
 % https://latexdraw.com/how-to-create-a-beautiful-cover-page-in-latex-using-tikz/
 \begin{titlepage}
-	
+
 	\pagestyle{empty}
 	\protect\thispagestyle{empty}
-	
+
 	\ifx\printableimages\trueValue
 		\input{utils/cover_bw}
 	\else
-%		\input{utils/cover_colour}
-                \input{utils/cover_colour_alternative_rainbow}
-%		\input{utils/cover_colour_blue}
-%               \input{utils/cover_colour_tschichold}
-%               \input{utils/cover_colour_tschichold_blue}
+		%		\input{utils/cover_colour}
+		\input{utils/cover_colour_alternative_rainbow}
+		%		\input{utils/cover_colour_blue}
+		%               \input{utils/cover_colour_tschichold}
+		%               \input{utils/cover_colour_tschichold_blue}
 	\fi
-	
+
 \end{titlepage}
 
 \frontmatter % apply TOC styles frontmatter
@@ -181,7 +181,6 @@
 
 % List of publications
 \iffilepublications
-
 	\newcommand{\bibnamePublications}{List of Publications}
 
 	\protect\chapter*{\flushleft\bibnamePublications\vspace{-0.5cm}\customquad\rule{\linewidth}{1pt}\vspace{-1.2cm}}
@@ -190,8 +189,8 @@
 	\SetHeaderTitle{\MakeUppercase{\bibnamePublications}}
 	\addcontentsline{toc}{chapter}{\bibnamePublications}
 	\protect\thispagestyle{phdfancyempty}
-%	\protect\thispagestyle{phdfancyspecialempty}
-%	\protect\bibliographystyle{./packages/ieeetr-redux} % default bibliography style
+	%	\protect\thispagestyle{phdfancyspecialempty}
+	%	\protect\bibliographystyle{./packages/ieeetr-redux} % default bibliography style
 	\protect\nocite{*}
 	\protect\bibliographystyle{unsrt}
 	\protect\bibliography{./utils/publications}
