@@ -1,4 +1,4 @@
-# Unofficial LaTeX template for thesis/reports/books with logos and style of Universidad de Zaragoza
+# Unofficial LaTeX template for thesis/reports/books with logos and style of Worcester Polytechnic Institute
 
 Output PDF [here](report.pdf).
 
