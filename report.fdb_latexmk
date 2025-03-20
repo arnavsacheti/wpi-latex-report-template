@@ -1,32 +1,31 @@
 # Fdb version 4
-["bibtex publications"] 1742502745.1381 "publications.aux" "publications.bbl" "publications" 1742502781.83536 0
+["bibtex publications"] 1742502745.1381 "publications.aux" "publications.bbl" "publications" 1742503310.54489 0
   "./utils/publications.bib" 1742405361.36908 862 b2f075a0966023d5cf6d5a79cf0423dc ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "publications.aux" 1742502781.26972 125 0c65d8616add5073f50bd7a22a26db1f "pdflatex"
+  "publications.aux" 1742503310.10713 125 0c65d8616add5073f50bd7a22a26db1f "pdflatex"
   (generated)
   "publications.bbl"
   "publications.blg"
   (rewritten before read)
-["bibtex report"] 1742502745.06081 "report.aux" "report.bbl" "report" 1742502781.83533 0
+["bibtex report"] 1742503060.30147 "report.aux" "report.bbl" "report" 1742503310.54482 0
   "./utils/report-bib.bib" 1742406361.91899 2273 5e86f0f206d4a450e8566c7a54409971 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "report.aux" 1742502781.26 8115 4f0d1e3c6f66a4c84e030c0f5066efb5 "pdflatex"
+  "report.aux" 1742503310.09707 8115 4f0d1e3c6f66a4c84e030c0f5066efb5 "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["makeindex report.idx"] 1742502781.76003 "report.idx" "report.ind" "report" 1742502781.83531 0
-  "report.idx" 1742502781.26953 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex report.idx"] 1742503060.23538 "report.idx" "report.ind" "report" 1742503310.54474 0
+  "report.idx" 1742503310.10697 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "report.ilg"
   "report.ind"
   (rewritten before read)
-["pdflatex"] 1742502778.38537 "/Users/arnavsacheti/Documents/GitHub/wpi-latex-report-template/report.tex" "report.pdf" "report" 1742502781.83539 0
+["pdflatex"] 1742503307.63599 "/Users/arnavsacheti/Documents/GitHub/wpi-latex-report-template/report.tex" "report.pdf" "report" 1742503310.54493 0
   "/Users/arnavsacheti/Documents/GitHub/wpi-latex-report-template/report.tex" 1742406320.30528 7305 d5fdf4dcae3f38328c6f876ba885bae8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx0800.tfm" 1136768653 3584 269b66e921ba58750c12f7f1c8ea3ebd ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrb1728.tfm" 1136768653 3584 02866f25e0169a44e95bf6c9ed015ed1 ""
@@ -83,7 +82,6 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb" 1215737283 164252 e0fa571e05777bac365ddd5bdf6e8800 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1215737283 145408 43d44302ca7d82d487f511f83e309505 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1215737283 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrb1728.pfb" 1215737283 137424 c8decdf2eabe1a0253d04426ebc6d828 ""
@@ -431,25 +429,25 @@
   "chapters/glossary.tex" 1742405361.32456 190 8dab393e5baf3b37c713c1e32ef2be5e ""
   "images/image-256.png" 1742405361.32581 5281 df774e4d3f2baf8dfab9ec20a2bc724f ""
   "images/image-500.png" 1742405361.32589 9191 5a704238eb09b6d8fa9685d442afbbad ""
-  "images/logo-simple.png" 1742405881.7255 224654 f6558c01244dae2299b1051475263421 ""
+  "images/logo-simple.png" 1742503197.83275 100803 2dacb2a06d258bfd250245a3115d48a6 ""
   "images/university.png" 1742405704.41529 624303 28ec87ac2c60894039000fe7d1e42d1e ""
   "packages/catoptions.sty" 1742405361.35163 186665 8e2c707952076ad1e34a13111098881f ""
   "packages/circuitikzgit.sty" 1742405361.35239 899763 30f0215864ca29b358f0b8e2dce89cf0 ""
-  "publications.aux" 1742502781.26972 125 0c65d8616add5073f50bd7a22a26db1f "pdflatex"
-  "publications.bbl" 1742502778.07098 544 4ca787593bb3b3643217298960cf91ed "bibtex publications"
-  "report.aux" 1742502781.26 8115 4f0d1e3c6f66a4c84e030c0f5066efb5 "pdflatex"
-  "report.bbl" 1742502777.97964 807 2bd79cefca153b92e4f9130fa048e312 "bibtex report"
-  "report.equ" 1742502781.27017 589 794d6c6a19f66ff94ef3b10b07f0535b "pdflatex"
-  "report.gls" 1742502777.89701 412 7f0ede6f87dfa5c905679ac48c51ccba ""
-  "report.ind" 1742502781.83059 0 d41d8cd98f00b204e9800998ecf8427e "makeindex report.idx"
-  "report.lof" 1742502781.26999 907 717eb5c5206eeb67ebd2ea643a522fcb "pdflatex"
-  "report.lot" 1742502781.27008 403 d11ba4fcf20b29f41ae174e1964d0750 "pdflatex"
-  "report.mw" 1742502781.26794 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "report.out" 1742502781.26827 723 cf465774472cbf97532f1c5e3ba47226 "pdflatex"
+  "publications.aux" 1742503310.10713 125 0c65d8616add5073f50bd7a22a26db1f "pdflatex"
+  "publications.bbl" 1742502857.66557 544 4ca787593bb3b3643217298960cf91ed "bibtex publications"
+  "report.aux" 1742503310.09707 8115 4f0d1e3c6f66a4c84e030c0f5066efb5 "pdflatex"
+  "report.bbl" 1742503060.37057 793 80748d6025645c867327700d418323d2 "bibtex report"
+  "report.equ" 1742503310.10748 589 794d6c6a19f66ff94ef3b10b07f0535b "pdflatex"
+  "report.gls" 1742502857.51725 412 7f0ede6f87dfa5c905679ac48c51ccba ""
+  "report.ind" 1742503060.30066 0 d41d8cd98f00b204e9800998ecf8427e "makeindex report.idx"
+  "report.lof" 1742503310.10732 907 717eb5c5206eeb67ebd2ea643a522fcb "pdflatex"
+  "report.lot" 1742503310.1074 403 d11ba4fcf20b29f41ae174e1964d0750 "pdflatex"
+  "report.mw" 1742503310.10565 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "report.out" 1742503310.10591 723 cf465774472cbf97532f1c5e3ba47226 "pdflatex"
   "report.tex" 1742406320.30528 7305 d5fdf4dcae3f38328c6f876ba885bae8 ""
-  "report.toc" 1742502781.26985 936 24d706721d3086b7893d6c53eaeaf20c "pdflatex"
+  "report.toc" 1742503310.10723 936 24d706721d3086b7893d6c53eaeaf20c "pdflatex"
   "utils/chaptertitle_styles.tex" 1742405361.36461 4819 021da955ff5df198752858451be342bf ""
-  "utils/cover_colour_alternative_rainbow.tex" 1742502773.75527 3697 9f7d4f835b328d83a2543e0b834d4984 ""
+  "utils/cover_colour_alternative_rainbow.tex" 1742503307.38739 3694 1e6985b75e5b9f506801d85abb35bde6 ""
   "utils/declaration.tex" 1742405361.36519 1917 872f01bf63cfe1c890f4bacd485613ca ""
   "utils/epilogue.tex" 1742405361.36531 157 4898aaefb92392d3e52ffdf2ad852ef6 ""
   "utils/fancy_styles.tex" 1742405361.36537 5929 6935336cc729c37aac85f0862073327d ""

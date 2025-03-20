@@ -15,6 +15,10 @@ _minted-report
 *.glg
 *.lot
 *.lof
+*.ilg
+*.ind
+*.fls
+*.fdb_latexmk
 *.equ
 *.mw
 book-cover/*.aux
