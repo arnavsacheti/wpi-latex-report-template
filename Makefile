@@ -5,16 +5,16 @@ DOC := report
 PUBS := publications
 
 ifneq ($(OS),Windows_NT)
-EXISTSBIBS := $(shell grep -rnw --include \*.tex '.' -e '\\bibliography{' --color=always --exclude-dir=bibliography-work-report > /dev/null && echo "true")
-OUTBIBS := $(shell grep -rnw --include \*.tex '.' -e '%\\bibliography{' --color=always --exclude-dir=bibliography-work-report > /dev/null && echo "false")
+EXISTSBIBS := $(shell grep -rnw --include \*.tex '.' -e '\\bibliography{' --color=always > /dev/null && echo "true")
+OUTBIBS := $(shell grep -rnw --include \*.tex '.' -e '%\\bibliography{' --color=always > /dev/null && echo "false")
 SHELLBIBS := $(shell if [ "$(OUTBIBS)" = "false" ]; then echo "false"; else echo "true"; fi)
 CHECKBIBS := $(shell if [ "$(EXISTSBIBS)" = "true" ]; then echo "$(SHELLBIBS)"; else echo "false"; fi)
 
 CHECKPUBS := $(shell test -f $(PUBS).aux && echo "true")
 CHECKREPORT := $(shell test -f $(DOC).pdf && echo "true")
 
-EXISTSGLOSSARIES := $(shell grep -rnw --include \*.tex '.' -e 'makeglossaries' --color=always --exclude-dir=bibliography-work-report > /dev/null && echo "true")
-OUTGLOSSARIES := $(shell grep -rnw --include \*.tex '.' -e '%\\makeglossaries' --color=always --exclude-dir=bibliography-work-report > /dev/null && echo "false")
+EXISTSGLOSSARIES := $(shell grep -rnw --include \*.tex '.' -e 'makeglossaries' --color=always > /dev/null && echo "true")
+OUTGLOSSARIES := $(shell grep -rnw --include \*.tex '.' -e '%\\makeglossaries' --color=always > /dev/null && echo "false")
 CHECKGLOSSARIES := $(shell if [ "$(OUTGLOSSARIES)" = "false" ]; then echo "false"; else echo "true"; fi)
 SHELLGLOSSARIES := $(shell if [ "$(EXISTSGLOSSARIES)" = "true" ]; then echo "$(CHECKGLOSSARIES)"; else echo "false"; fi)
 
@@ -318,12 +318,12 @@ reduce-merge-pdf: cover-latex reduce-pdf merge-cover
 # search in pdf file
 # USAGE: make search-pdf SEARCH_TERM=Kittel
 search-pdf:
-	pdfgrep -n -R "$(SEARCH_TERM)" $(DOC).pdf --exclude=bibliography-work-report | cat
+	pdfgrep -n -R "$(SEARCH_TERM)" $(DOC).pdf | cat
 
 # search in tex files
 # USAGE: make search-tex SEARCH_TERM=Kittel
 search-tex:
-	grep -rnw --include \*.tex '.' -e '$(SEARCH_TERM)' --color=always --exclude-dir=bibliography-work-report | cat
+	grep -rnw --include \*.tex '.' -e '$(SEARCH_TERM)' --color=always | cat
 
 # Help command
 help:

@@ -282,7 +282,6 @@ Tools\Commands\biber=biber %
 Tools\Commands\bibliography=txs:///bibtex
 Tools\Commands\bibtex=bibtex ?me*/*.aux
 Tools\Commands\bibtex8=bibtex8 ?*.aux
-Tools\Commands\bibunits=/Users/sid/Desktop/latex-template-report-university/bibliography-work-report/bibunit-latex-template-report-university/latex_bibunits.sh %.tex | txs:///view
 Tools\Commands\compile=txs:///pdflatex
 Tools\Commands\dvi-chain=txs:///latex | txs:///view-dvi
 Tools\Commands\dvi-pdf-chain=txs:///latex | txs:///dvipdf | txs:///view-pdf

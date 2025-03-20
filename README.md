@@ -46,7 +46,7 @@ Finally, you can import building settings for TeXStudio using the **TeXStudio pr
 
 Besides the default bibliography style, there are three projects which implement bibunits, chapterbib or default style with subsections for bibliography, feel free to e¡use them if you need bibliography at the end of each chapter.
 
-Check out the bibliography flavours [here](bibliography-work-report)
+Check out the bibliography flavours [here](https://github.com/sergiomtzlosa/latex-template-report-unizar/tree/master/bibliography-work-report)
 
 ## Docker PDF compression
 
